@@ -144,7 +144,7 @@ span {
 }
 
 .gallery {
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 #projects > div > div > div.project-tile.mobile > figure > figcaption > h3 {

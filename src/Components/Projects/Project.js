@@ -56,11 +56,7 @@ const Project = (props) => {
             <figcaption>
               {/* <h3 className="name">{project.title}</h3> */}
             </figcaption>
-            <img
-              className="desktop-condo"
-              src={project.image}
-              alt={project.title}
-            />
+            <img className="desktop-condo" src={condo} alt={project.title} />
           </figure>
           <div className="condo-description">
             <h3 className="name" style={{ color: "black" }}>
