@@ -145,6 +145,8 @@ span {
 
 .gallery {
   padding: 20px;
+  height: auto;
+  width: auto;
 }
 
 #projects > div > div > div.project-tile.mobile > figure > figcaption > h3 {
