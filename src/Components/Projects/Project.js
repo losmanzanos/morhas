@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Project.css";
 import Modal from "../Modal/Modal";
 
+import condo from "../images/condo.jpg";
+
 const Project = (props) => {
   console.log(props);
   const [show, setShow] = useState(false);
@@ -24,7 +26,8 @@ const Project = (props) => {
               <h3 className="name">{project.title}</h3>
             </figcaption>
             <img
-              src={project.image}
+              // src={project.image}
+              src={condo}
               alt={project.title}
               onClick={(e) => {
                 setImage(project.image);
