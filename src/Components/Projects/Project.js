@@ -41,6 +41,7 @@ const Project = (props) => {
             show={show}
             setShow={setShow}
             title={title}
+            image={image}
             description={description}
             purchasePrice={purchasePrice}
             currentValue={currentValue}
