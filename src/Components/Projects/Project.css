@@ -116,7 +116,7 @@ span {
 }
 
 .mobile {
-  display: flex;
+  display: block;
 }
 
 .desktop {
@@ -144,7 +144,7 @@ span {
 }
 
 .gallery {
-  padding: 20px 0;
+  padding: 20px;
 }
 
 #projects > div > div > div.project-tile.mobile > figure > figcaption > h3 {
