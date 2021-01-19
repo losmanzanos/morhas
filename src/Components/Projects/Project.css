@@ -1,0 +1,175 @@
+@font-face {
+  font-family: Esphimere;
+  src: url(https://dl.dropbox.com/s/hbfguzbnu36png5/Esphimere.otf);
+}
+
+* {
+  font-family: Esphimere;
+}
+
+#projects {
+  height: auto;
+  width: auto;
+  text-align: center;
+  background-color: rgb(80, 129, 245);
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-height: 70vh;
+  max-width: 100%;
+}
+
+.projects {
+  padding-bottom: 15px;
+  display: grid;
+}
+
+#projects
+  > div
+  > div
+  > div:nth-child(1)
+  > figure
+  > figcaption
+  > div.project-title {
+  font-family: Armata, Esphimere, sans-serif;
+  font-size: 1.4rem;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+.project-tile {
+  background: hsl(0, 0%, 100%);
+  box-shadow: 3px 3px 10px hsl(0, 0%, 80%);
+  padding: 20px;
+  margin: 10px;
+}
+
+.project-title img {
+  border: 1px solid hsl(0, 0%, 85%);
+  max-width: 800px;
+  width: 100%;
+}
+
+#projects > div > div > div > figure > img:hover {
+  -webkit-filter: brightness(70%);
+  filter: brightness(70%);
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+.name {
+  color: white;
+}
+
+.projects .tools-used {
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+.links .source,
+.server,
+.demo {
+  padding-top: 10px;
+}
+
+.source,
+.server,
+.demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.links p {
+  font-size: 0.8rem;
+  line-height: 1.35;
+  margin: 0;
+  padding: 5px;
+}
+
+a,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: red;
+}
+
+span {
+  font-size: 0.5rem;
+}
+
+.mobile {
+  display: flex;
+}
+
+.desktop {
+  display: none;
+  padding: 25px;
+  align-items: center;
+}
+
+.desktop-condo {
+  max-width: 40vw;
+}
+
+.condo-description {
+  /* text-align: center;
+  color: red;
+  justify-content:center;
+  align-items: center; */
+  max-width: 80%;
+  margin: auto;
+  border: 2px solid black;
+  margin: 5px;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 2px 2px 5px black;
+}
+
+.gallery {
+  padding-bottom: 20px;
+}
+
+#projects > div > div > div.project-tile.mobile > figure > figcaption > h3 {
+  color: black;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .desktop-condo {
+    max-height: 80vh;
+  }
+
+  .name {
+    color: white;
+  }
+}

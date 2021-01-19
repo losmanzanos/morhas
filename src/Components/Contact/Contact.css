@@ -1,0 +1,62 @@
+/* Contact */
+
+#contact {
+  text-align: center;
+  border: solid black;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+#contact h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  color: white;
+  -webkit-text-stroke: 1px #000000;
+}
+
+#contact p {
+  font-size: 30px;
+}
+
+#contact form input,
+textarea {
+  display: block;
+  margin: 10px auto;
+  border: solid rgb(0, 0, 0);
+  padding: 5px;
+  /*font-family: "Indie Flower", cursive; */
+}
+
+#contact textarea {
+  width: 200px;
+}
+
+#contact input[type="submit"] {
+  padding: 10px;
+  margin-bottom: 25px;
+}
+
+#social {
+  margin: 10px;
+  text-align: center;
+}
+
+#social p {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+}
+
+.actions {
+  padding-left: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+#contact > div > div > form > input.name {
+  color: black;
+}

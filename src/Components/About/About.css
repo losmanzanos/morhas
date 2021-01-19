@@ -1,0 +1,58 @@
+/* About */
+
+#about {
+  height: auto;
+  width: 100%;
+  background-color: #a7cce1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+#text h3 {
+  padding: 10px 10px;
+  font-size: 20px;
+}
+
+#text p {
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+h3,
+p,
+a {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+#text > p.number > a:hover {
+  font-weight: bold;
+  color: blue;
+}
+
+#text > p.number {
+  font-size: 16px;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 800px) {
+  #about {
+    flex-direction: row;
+    padding-right: 50px;
+    height: auto;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  .text,
+  #text > a {
+    /* text-align: justify; */
+    max-width: 60vw;
+  }
+}
