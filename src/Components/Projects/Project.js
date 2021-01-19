@@ -6,7 +6,7 @@ const Project = (props) => {
   console.log(props);
   const [show, setShow] = useState(false);
   const [title, setTitle] = useState("");
-  const [image, setImage] = useStae("");
+  const [image, setImage] = useState("");
   const [purchasePrice, setPurchasePrice] = useState("");
   const [currentValue, setCurrentValue] = useState("");
   const [description, setDescription] = useState("");
