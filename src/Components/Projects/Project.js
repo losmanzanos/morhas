@@ -24,9 +24,21 @@ const Project = (props) => {
           <figure>
             <figcaption>
               <h3 className="name">{project.title}</h3>
+              <img
+                src={condo}
+                alt={project.title}
+                onClick={(e) => {
+                  setImage(project.image);
+                  setDescription(project.description);
+                  setTitle(project.title);
+                  setPurchasePrice(project.purchasePrice);
+                  setCurrentValue(project.currentValue);
+                  showModal();
+                }}
+              />
             </figcaption>
-            <img
-              // src={project.image}
+            {/* <img
+              src={project.image}
               src={condo}
               alt={project.title}
               onClick={(e) => {
@@ -37,7 +49,7 @@ const Project = (props) => {
                 setCurrentValue(project.currentValue);
                 showModal();
               }}
-            />
+            /> */}
           </figure>
 
           <Modal
